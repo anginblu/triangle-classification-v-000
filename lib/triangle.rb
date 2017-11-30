@@ -29,7 +29,7 @@ class Triangle
     if self.sides.any? {|i| i <= 0}
         raise TriangleError
         puts error.message
-    elsif (self.sides.min + self.middle) <= self.sides.max
+    elsif (self.min + self.middle) <= self.max
       raise TriangleError
       puts error.message
     elsif @side1 == @side2 && @side2 == @side3
