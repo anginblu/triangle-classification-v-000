@@ -13,7 +13,7 @@ class Triangle
   end
 
   def sides
-    @sides
+    @sides.sort!
 #    @middle = @sides.find_all {|i| i != sides.max }
   end
 
