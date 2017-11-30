@@ -14,19 +14,7 @@ class Triangle
 
   def sides
     @sides.sort!
-#    @middle = @sides.find_all {|i| i != sides.max }
   end
-
-  def max
-    self.sides.max
-  end
-
-  def min
-    self.sides.min
-  end
-
-  def middle
-    self.sides.
 
   def kind
     if self.sides.any? {|i| i <= 0}
