@@ -22,7 +22,7 @@ class Triangle
   end
 
   def min
-    self.sides.max
+    self.sides.min
   end
 
   def kind
