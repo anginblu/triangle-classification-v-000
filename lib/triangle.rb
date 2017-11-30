@@ -26,6 +26,7 @@ class Triangle
   end
 
   def middle
+    self.sides.
 
   def kind
     if self.sides.any? {|i| i <= 0}
