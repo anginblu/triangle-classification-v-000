@@ -17,6 +17,8 @@ class Triangle
 #    @middle = @sides.find_all {|i| i != sides.max }
   end
 
+  def middle
+
   def kind
     middle = self.sides.each {|i| i != self.sides.min && i != self.sides.max}
     if self.sides.any? {|i| i <= 0}
