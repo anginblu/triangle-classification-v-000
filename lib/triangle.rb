@@ -23,7 +23,8 @@ class Triangle
         raise TriangleError
         puts error.message
     elsif self.sides.min + middle <= self.sides.max
-
+      raise TriangleError
+      puts error.message
     elsif @side1 == @side2 && @side2 == @side3
         :equilateral
     elsif @side1 == @side2 || @side1 == @side3 || @side2 == @side3
