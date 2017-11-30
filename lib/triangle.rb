@@ -25,6 +25,8 @@ class Triangle
     self.sides.min
   end
 
+  def middle
+
   def kind
     if self.sides.any? {|i| i <= 0}
         raise TriangleError
