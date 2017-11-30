@@ -18,11 +18,13 @@ class Triangle
   end
 
   def kind
+    middle = self.sides.each {|i| i != self.sides.min && i != self.sides.max}
     if self.sides.any? {|i| i <= 0}
         raise TriangleError
         puts error.message
-    elsif self.sides.any? {(self.sides.min + i) <= self.sides.max }
-        
+    elsif 
+      (self.sides.min + i) <= self.sides.max }
+
     elsif @side1 == @side2 && @side2 == @side3
         :equilateral
     elsif @side1 == @side2 || @side1 == @side3 || @side2 == @side3
