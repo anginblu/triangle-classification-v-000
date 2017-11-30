@@ -18,6 +18,7 @@ class Triangle
   end
 
   def middle
+    self.sides.each {|i| i != self.sides.min && i != self.sides.max}
 
   def kind
     middle = self.sides.each {|i| i != self.sides.min && i != self.sides.max}
